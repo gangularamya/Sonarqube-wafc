@@ -21,6 +21,9 @@ if ! [ "$(ls -A $SONARQUBE_HOME)" ]; then
 		fi
 	done
 fi
+
+echo $PWD
+
 echo "************migration ended***********"
 
 chown -R sonarqube:sonarqube $SONARQUBE_HOME
